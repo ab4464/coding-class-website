@@ -5,9 +5,10 @@
         <title>Mr. Bloom's Computer Science Class</title>
         
         <!-- META DATA, IMPORT BOOTSTRAP, FONTS, ICONS, etc... -->
-	<link rel="stylesheet" href="https://jmb2407.github.io/coding-class-website/bootstrap.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link type="text/css" rel="stylesheet" href="https://jmb2407.github.io/coding-class-website/studentStyle.css"/>
+		<link type="text/css" rel="stylesheet" href="studentStyle.css"/>
+        <script type="text/javascript" src="main.js"></script>
 	</head>
     
     <!-- HTML BODY -->
@@ -32,8 +33,8 @@
                         </div>                                                    <!-- tells screen-readers to ignore the element -->
                         <div class="form-group">
                             <li class="list-group-item-action">
-                                <a href="https://jmb2407.github.io/coding-class-website/teacherIndex.html"><i class="fa fa-lg fa-male"></i></a>
-                                <a href="https://jmb2407.github.io/coding-class-website/teacherIndex.html" class="nav-text">TEACHER</a>
+                                <a href="/teacher_page/index.html"><i class="fa fa-lg fa-male"></i></a>
+                                <a href="/teacher_page/index.html" class="nav-text">TEACHER</a>
                             </li>
                         </div>
                     </ul>
@@ -45,26 +46,25 @@
             <div class="container-main">
                 <section id="lesson-explanation">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <h2>Lesson 1</h2>
                         </div>
                     </div>
-
                     <div class="row">
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
                             <br><img src="https://upload.wikimedia.org/wikipedia/commons/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg" class="img-thumbnail" alt="Lesson 1 Overview">
                         </div>
-                        <div class="col-lg-10">
+                        <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
                             <h3>Overview</h3>
                             <p>To get a feel for HTML and CSS, we're going to "tinker" with an existing program rather than build one from scratch one Day 1. What this means is that you'll be manipulating and thinking about a very simple and silly webpage. I will provide you with a few guiding questions to help you direct your attention and activities to the key patterns and relationships in the code, but I encourage you to formulate your own questions and ideas about how the code works and to test out your hypotheses.</p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
                             <br><br>
-                            <img src="https://jmb2407.github.io/coding-class-website/activity_tinker.png" class="img-thumbnail" alt="Learning Activity">
+                            <img src="https://cdn.pixabay.com/photo/2016/11/06/18/32/activity-1803710_960_720.png" class="img-thumbnail" alt="Learning Activity">
                         </div>
-                        <div class="col-lg-10">
+                        <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12">
                             <br><h3>Tinker Activity</h3>
                             <ul>
                                 <li>Start by opening the program. Click the "Edit in JSFiddle" button below.</li>
@@ -77,126 +77,124 @@
                 </section>
                     
                 <section id="student-work">
-                    <form action="/action_page.php" method="post">   <!-- POST has no size limitations, and can be used to send lots of data -->
-                        <fieldset class="form-group row">
-                            <legend>Guided Tinkering with HTML</legend>
-                            <div class="col-lg-6">
-                                <iframe width="100%" height="320" src="//jsfiddle.net/jmb2407/3uupcgde/18/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <label for="InputQuestion1" class="col-lg-2 col-form-label">Question 1</label>
-                                    <div class="col-lg-10">
-                                        <small id="Question1Help" class="form-text text-muted">Change the OL tags to UL tags in the HTML code. What happens when you do that?</small>
-                                        <input type="text" class="form-control" id="InputQuestion1" aria-describedby="Question1Help" placeholder="">
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    <label for="InputQuestion2" class="col-lg-2 col-form-label">Question 2</label>
-                                    <div class="col-lg-10">
-                                        <small id="Question2Help" class="form-text text-muted">Make a new list of the top 3 things cats love and copy-paste your html code here.</small>
-                                        <textarea class="form-control" id="InputQuestion2" aria-describedby="Question2Help" rows="3"></textarea>
-                                    </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    <label for="Question3Radios" class="col-lg-2 col-form-label">Question 3</label>
-                                    <div class="col-lg-10">
-                                        <small id="Question3Help" class="form-text text-muted">Delete the closing H3 tag in the "intro" section. What happens when you do that?<br>Select the answer that most accurately describes the change in output.</small>
-                                        <div class= "form-check">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input" name="Question3Radios" id="Question3Radios1" value="option1">
-                                                The text in the "intro" section changes from normal to bold font.
-                                            </label>
-                                        </div>
-                                        <div class= "form-check">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input" name="Question3Radios" id="Question3Radios2" value="option2">
-                                                Any non-bold text in the main container is now bold.
-                                            </label>
-                                        </div>
-                                        <div class= "form-check">
-                                            <label class="form-check-label">
-                                                <input type="radio" class="form-check-input" name="Question3Radios" id="Question3Radios3" value="option3">
-                                                The text in the "intro" section changes to a smaller font size. 
-                                            </label>
-                                        </div>
-                                    </div>
+                    <fieldset class="form-group row">
+                        <legend>Guided Tinkering with HTML</legend>
+                        <div class="col-lg-6">
+                            <iframe width="100%" height="320" src="//jsfiddle.net/jmb2407/3uupcgde/18/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <label for="InputQuestion1" class="col-lg-2 col-form-label">Question 1</label>
+                                <div class="col-lg-10">
+                                    <small id="Question1Help" class="form-text text-muted">Change the OL tags to UL tags in the HTML code. What happens when you do that?</small>
+                                    <input type="text" class="form-control" id="InputQuestion1" aria-describedby="Question1Help" placeholder="">
                                 </div>
                             </div>
-                        </fieldset>
-                        <br>
-                        <fieldset class="form-group row">
-                            <legend>Guided Tinkering with CSS</legend>
-                            <div class="col-lg-6">
-                                <iframe width="100%" height="400" src="//jsfiddle.net/jmb2407/3uupcgde/18/embedded/css,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                            <br>
+                            <div class="row">
+                                <label for="InputQuestion2" class="col-lg-2 col-form-label">Question 2</label>
+                                <div class="col-lg-10">
+                                    <small id="Question2Help" class="form-text text-muted">Make a new list of the top 3 things cats love and copy-paste your html code here.</small>
+                                    <textarea class="form-control" id="InputQuestion2" aria-describedby="Question2Help" rows="3"></textarea>
+                                </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <label for="SelectQuestion5" class="col-lg-2 col-form-label">Question 5</label>
-                                    <div class="col-lg-10">
-                                        <small id="Question5Help" class="form-text text-muted">Change the value of the "text-decoration" attribute for the h4, h5, and h6 elements from "underline" to "none". What happens when you do that? Select best answer from the dropdown menu.</small>
-                                        <select class="form-control" id="SelectQuestion5" aria-describedby="Question5Help">
-                                            <option>The title, "Meow meow meow meow" is no longer underlined.</option>
-                                            <option>The "Grumpy Cat" text is no longer underlined.</option>
-                                            <option>The "Nyan Cat" text is no longer underlined.</option>
-                                            <option>Both the "Grumpy Cat" text and the "Nyan Cat" text are no longer underlined.</option>
-                                        </select>
+                            <br>
+                            <div class="row">
+                                <label for="Question3Radios" class="col-lg-2 col-form-label">Question 3</label>
+                                <div class="col-lg-10">
+                                    <small id="Question3Help" class="form-text text-muted">Delete the closing H3 tag in the "intro" section. What happens when you do that?<br>Select the answer that most accurately describes the change in output.</small>
+                                    <div class= "form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="Question3Radios" id="Question3Radios1" value="option1">
+                                            The text in the "intro" section changes from normal to bold font.
+                                        </label>
                                     </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    <label for="SelectQuestion6" class="col-lg-2 col-form-label">Question 6</label>
-                                    <div class="col-lg-10">
-                                        <small id="Question6Help" class="form-text text-muted">Add another CSS styling rule to the h1, h2, h3, h4, h5, and h6 elements. Right below "font-weight: bold;" you should type "font-style: oblique;" What happens when you add this styling rule? Select all that apply by holding down the command/option key.</small>
-                                        <select multiple class="form-control" id="SelectQuestion6" aria-describedby="Question6Help">
-                                            <option>The title, "Meow meow meow meow" becomes italicized.</option>
-                                            <option>The "Top 3 things cats hate" list becomes italicized.</option>
-                                            <option>The section titles, "Introduction to Cats" and "Cats Opinions" become italicized.</option>
-                                            <option>"Grumpy Cat" and "Nyan Cat" become italicized.</option>
-                                        </select>
+                                    <div class= "form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="Question3Radios" id="Question3Radios2" value="option2">
+                                            Any non-bold text in the main container is now bold.
+                                        </label>
                                     </div>
-                                </div>
-                                <br>
-                                <div class="row">
-                                    <label for="InputQuestion7" class="col-lg-2 col-form-label">Question 7</label>
-                                    <div class="col-lg-10">
-                                        <small id="Question7Help" class="form-text text-muted">How would you change the color of the title, "Meow meow meow meow"? Copy-paste your CSS code here.</small>
-                                        <textarea class="form-control" id="InputQuestion7" aria-describedby="Question7Help" rows="3"></textarea>
+                                    <div class= "form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="Question3Radios" id="Question3Radios3" value="option3">
+                                            The text in the "intro" section changes to a smaller font size. 
+                                        </label>
                                     </div>
                                 </div>
                             </div>
-                        </fieldset>
-                        <br>
-                        <fieldset class="form-group row">
-                            <legend>Student Information</legend>
-                            <label for="InputName1" class="col-lg-1 col-form-label">Name</label>
-                            <div class="col-lg-2">
-                                <input type="text" class="form-control" id="InputName1" placeholder="">
-                            </div>
-                            <label for="InputEmail1" class="col-lg-1 col-form-label">Email</label>
-                            <div class="col-lg-2">
-                                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="">
-                                <small id="emailHelp" class="form-text text-muted">We'll send a copy of your response.</small>
-                            </div>
-                            <label for="InputDate1" class="col-lg-1 col-form-label">Date</label>
-                            <div class="col-lg-2">
-                                <input class="form-control" type="date" value="2017-06-02" id="InputDate1">
-                            </div>
-                            <div class="col-lg-2">
-                                <div class="form-check">
-                                    <label class="form-check-label" id="checkbox-agreement">
-                                        <input type="checkbox" class="form-check-input pull-left">
-                                        I certify that the answers (above) are my own work. 
-                                    </label>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <fieldset class="form-group row">
+                        <legend>Guided Tinkering with CSS</legend>
+                        <div class="col-lg-6">
+                            <iframe width="100%" height="400" src="//jsfiddle.net/jmb2407/3uupcgde/18/embedded/css,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <label for="SelectQuestion5" class="col-lg-2 col-form-label">Question 5</label>
+                                <div class="col-lg-10">
+                                    <small id="Question5Help" class="form-text text-muted">Change the value of the "text-decoration" attribute for the h4, h5, and h6 elements from "underline" to "none". What happens when you do that? Select best answer from the dropdown menu.</small>
+                                    <select class="form-control" id="SelectQuestion5" aria-describedby="Question5Help">
+                                        <option>The title, "Meow meow meow meow" is no longer underlined.</option>
+                                        <option>The "Grumpy Cat" text is no longer underlined.</option>
+                                        <option>The "Nyan Cat" text is no longer underlined.</option>
+                                        <option>Both the "Grumpy Cat" text and the "Nyan Cat" text are no longer underlined.</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="col-lg-1">
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                            <br>
+                            <div class="row">
+                                <label for="SelectQuestion6" class="col-lg-2 col-form-label">Question 6</label>
+                                <div class="col-lg-10">
+                                    <small id="Question6Help" class="form-text text-muted">Add another CSS styling rule to the h1, h2, h3, h4, h5, and h6 elements. Right below "font-weight: bold;" you should type "font-style: oblique;" What happens when you add this styling rule? Select all that apply by holding down the command/option key.</small>
+                                    <select multiple class="form-control" id="SelectQuestion6" aria-describedby="Question6Help">
+                                        <option>The title, "Meow meow meow meow" becomes italicized.</option>
+                                        <option>The "Top 3 things cats hate" list becomes italicized.</option>
+                                        <option>The section titles, "Introduction to Cats" and "Cats Opinions" become italicized.</option>
+                                        <option>"Grumpy Cat" and "Nyan Cat" become italicized.</option>
+                                    </select>
+                                </div>
                             </div>
-                        </fieldset>
-                    </form>
+                            <br>
+                            <div class="row">
+                                <label for="InputQuestion7" class="col-lg-2 col-form-label">Question 7</label>
+                                <div class="col-lg-10">
+                                    <small id="Question7Help" class="form-text text-muted">How would you change the color of the title, "Meow meow meow meow"? Copy-paste your CSS code here.</small>
+                                    <textarea class="form-control" id="InputQuestion7" aria-describedby="Question7Help" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <br>
+                    <fieldset class="form-group row">
+                        <legend>Student Information</legend>
+                        <label for="InputName1" class="col-lg-1 col-form-label">Name</label>
+                        <div class="col-lg-2">
+                            <input type="text" class="form-control" id="InputName1" placeholder="Your first and last name" onchange="setName()">
+                        </div>
+                        <label for="InputEmail1" class="col-lg-1 col-form-label">Email</label>
+                        <div class="col-lg-2">
+                            <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Your school email" onchange="setEmail()">
+                            <small id="emailHelp" class="form-text text-muted">We'll send a copy of your response.</small>
+                        </div>
+                        <label for="InputDate1" class="col-lg-1 col-form-label">Date</label>
+                        <div class="col-lg-2">
+                            <input class="form-control" type="date" value="2017-06-02" id="InputDate1">
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="form-check">
+                                <label class="form-check-label" id="checkbox-agreement">
+                                    <input type="checkbox" class="form-check-input pull-left" required>
+                                    I certify that the answers (above) are my own work. 
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+                            <button type="submit" class="btn btn-primary" onclick="thankUser()">Submit</button>
+                        </div>
+                    </fieldset>
                 </section>
             </div>
             
